@@ -1,0 +1,29 @@
+# R scripts (private work - hidden from collaborators)
+*.R
+*.Rhistory
+*.RData
+.Rproj.user/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data and logs
+*.log
