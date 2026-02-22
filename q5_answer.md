@@ -12,17 +12,17 @@
 
 Using the optimal manufacturer prices from Q4 and plugging them into our demand models, here's what a typical week would look like under each scenario compared to the status quo:
 
-| | Scenario 4(a) | Scenario 4(b) | Current |
+| | **Scenario 4(a)** | **Scenario 4(b)** | **From Q1** |
 |---|---|---|---|
-| **Mfg price per unit** | $1.99 | $2.15 | — |
-| **Brand 1 retail price** | $2.40 | $2.59 | $2.61 |
-| **PL retail price** | $2.15 | $2.24 | $2.15 |
-| **Brand 1 units sold** | 5,008 | 3,469 | 3,221 |
-| **PL units sold** | 4,037 | 4,174 | 4,545 |
-| **Brand 1 share** | 55.37% | 45.39% | 41.31% |
-| **PL share** | 44.63% | 54.61% | 58.69% |
-| **Retailer weekly profit** | $4,055 | $3,984 | $3,689 |
-| **Manufacturer weekly profit** | $1,926 | $1,901 | $1,802 |
+| **How many units will the retailer sell of each brand?** | | | |
+| 1. Brand 1 | 5,008 | 3,469 | 3,221 |
+| 2. Private Label | 4,037 | 4,174 | 4,545 |
+| **What will be the market shares of the two brands?** | | | |
+| 1. Brand 1 | 55.37% | 45.39% | 41.31% |
+| 2. Private Label | 44.63% | 54.61% | 58.69% |
+| **What will be the total weekly profits of the** | | | |
+| 1. Retailer | $4,055 | $3,984 | $3,689 |
+| 2. Manufacturer | $1,926 | $1,901 | $1,802 |
 
 ---
 
