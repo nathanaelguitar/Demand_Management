@@ -36,6 +36,25 @@ This project implements a data ingestion and processing pipeline for the BANA639
 - `get_summary_statistics()`: Generate summary stats
 - `export_to_csv()`: Export processed data
 
+### 3. `air_world_campaign_tools.py`
+**Purpose**: Unit 3 helper module for Air World sponsored search analysis
+
+**Key Features**:
+- Loads the Air World workbook with the correct header row
+- Cleans campaign fields and computes row-level metrics
+- Produces search engine and keyword summaries
+- Supports pivot-style tables, filtering, and KPI ranking
+
+**Main Functions**:
+- `load_air_world_data()`: Load and clean the Air World Excel data
+- `add_derived_metrics()`: Add CTR, conversion rate, CPC, profit, and ROI
+- `engine_performance_summary()`: Aggregate KPIs by search engine
+- `keyword_performance_summary()`: Aggregate KPIs by keyword
+- `overall_campaign_kpis()`: Compute full-campaign totals and rates
+- `keyword_engine_matrix()`: Build keyword x engine pivot tables
+- `top_keywords_by_clicks()`: Build the case-study top 10 keyword table with ROA
+- `top_keywords_by_metric()`: Return top keywords by impressions, clicks, or revenue
+
 ## Data Structure
 
 ### Input Data (from Excel)
@@ -121,6 +140,25 @@ df_clean = processor.load_and_clean_original_data()
 df_units = processor.calculate_unit_level_data(df_clean)
 stats = processor.get_summary_statistics(df_units)
 ```
+
+### Run Unit 3 Air World Analysis:
+```python
+from air_world_campaign_tools import (
+    add_derived_metrics,
+    engine_performance_summary,
+    load_air_world_data,
+    overall_campaign_kpis,
+)
+
+df = load_air_world_data("air_world.xlsx")
+df = add_derived_metrics(df)
+
+kpis = overall_campaign_kpis(df)
+engine_summary = engine_performance_summary(df)
+```
+
+Case-study note:
+- The Air World PDF instructs you to compute efficiency/effectiveness metrics from aggregated summaries, not by averaging row-level ratios.
 
 ### Run from Command Line:
 ```bash
