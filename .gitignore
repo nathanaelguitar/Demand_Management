@@ -27,3 +27,11 @@ Thumbs.db
 
 # Data and logs
 *.log
+
+# Graded answers and course-provided assignment material
+*_answer.md
+q4_answer.md
+q5_answer.md
+__pycache__/
+*.py[cod]
+.DS_Store
