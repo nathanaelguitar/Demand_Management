@@ -1,5 +1,4 @@
-# R scripts (private work - hidden from collaborators)
-*.R
+# R session artifacts (the .R scripts themselves are tracked)
 *.Rhistory
 *.RData
 .Rproj.user/
